@@ -28,6 +28,11 @@ public class App
     	driver.manage().window().maximize();
         
     	driver.get(url);
+        try {
+            Thread.sleep(10000); // 5000 milisegundos = 5 segundos
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         driver.close();
     	
